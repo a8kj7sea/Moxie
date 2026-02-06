@@ -1,4 +1,4 @@
-# Moxie
+# Moxie | <sup><sub>[![](https://jitpack.io/v/a8kj7sea/Moxie.svg)](https://jitpack.io/#a8kj7sea/Moxie)</sup></sub>
 
 **Moxie** is a high-performance configuration engine that treats files as dynamic templates. It decouples data storage from file logic, ensuring thread-safe, memory-efficient, and transformable configuration management.
 
