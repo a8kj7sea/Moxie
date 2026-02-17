@@ -21,12 +21,13 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
+          cache: maven
 
-      - name: Build project
-        run: mvn clean package
+      - name: Build all modules
+        run: mvn clean install --batch-mode
 
-      - name: Generate Javadoc
-        run: mvn javadoc:javadoc
+      - name: Generate aggregated Javadoc
+        run: mvn javadoc:aggregate
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
