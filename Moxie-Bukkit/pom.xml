@@ -13,12 +13,6 @@
 
     <artifactId>Moxie-Bukkit</artifactId>
 
-    <repositories>
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-        </repository>
-    </repositories>
 
     <dependencies>
 
@@ -29,13 +23,12 @@
             <scope>compile</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
-            <version>1.8.8-R0.1-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/libs/spigot-1.8.8-R0.1-SNAPSHOT.jar</systemPath>
-        </dependency>
+      <dependency>
+         <groupId>com.github.azbh111</groupId>
+         <artifactId>spigot-1.8.8</artifactId>
+         <version>R</version>
+         <scope>compile</scope>
+      </dependency>
 
     </dependencies>
 
